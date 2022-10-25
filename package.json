@@ -1,0 +1,19 @@
+{
+  "name": "boonesrecipes",
+  "version": "1.0.0",
+  "description": "Recipes for Boone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarettJones/BoonesRecipes.git"
+  },
+  "author": "Barett Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BarettJones/BoonesRecipes/issues"
+  },
+  "homepage": "https://github.com/BarettJones/BoonesRecipes#readme"
+}
