@@ -7,13 +7,18 @@ import PropTypes from "prop-types";
 const RecipeList = ({ recipes }) => {
   return (
     <List>
-      {recipes.map((recipe) => (
-        <Recipe
-          key={recipe.recipeName.replaceAll(" ", "-")}
-          recipeName={recipe.recipeName}
-          recipeDescription={recipe.recipeDescription}
-        />
-      ))}
+      {recipes.map((recipe) => {
+        const id = recipe.recipeName.replaceAll(" ", "-");
+        return (
+          <Recipe
+            key={id}
+            recipeId={id}
+            recipeName={recipe.recipeName}
+            recipeDescription={recipe.recipeDescription}
+            recipeOwner={recipe.recipeOwner}
+          />
+        );
+      })}
     </List>
   );
 };
